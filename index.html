@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en-PH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse sample homes in Metro Manila and Rizal, compare asking prices and floor areas, and try a property viewing inquiry.">
+  <meta name="theme-color" content="#222f26">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Formstead Realty | Homes in Metro Manila and Rizal</title>
+  <link rel="icon" type="image/png" href="asset/images/favicon.png">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <script src="asset/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Formstead<span> Realty</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#properties">Properties</a>
+        <a href="#viewing-guide">Viewing guide</a>
+      </nav>
+      <a class="header-action" href="#property-search">Find a property <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Find your <br>place.</h1>
+        <p>Homes in Metro Manila and nearby Rizal. Compare prices, locations and floor areas before arranging a viewing.</p>
+        <a class="button button-light" href="#properties">Browse properties <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="hero-image">
+        <img src="asset/images/solana-hero.webp" width="1399" height="933" alt="Modern two-storey home with warm interior light and a garden at dusk" fetchpriority="high">
+        <figcaption><span>Solana House</span><span>Antipolo, Rizal</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="wrap properties" id="properties" aria-labelledby="properties-title">
+      <div class="section-heading">
+        <h2 id="properties-title">Properties for sale</h2>
+        <p>Explore a condominium, a townhome and a detached house.</p>
+      </div>
+
+      <noscript><p>Enable JavaScript to filter properties, open photo tours, and try the viewing inquiry.</p></noscript>
+      <form class="filters" id="property-search" role="search" aria-label="Filter properties" hidden>
+        <div class="field search-field">
+          <label for="query">Search properties</label>
+          <input id="query" name="query" type="search" autocomplete="off" placeholder="Name, city or feature">
+        </div>
+        <div class="field">
+          <label for="location">Location</label>
+          <select id="location" name="location">
+            <option value="">All locations</option>
+            <option value="antipolo">Antipolo</option>
+            <option value="pasig">Pasig</option>
+            <option value="marikina">Marikina</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="property-type">Property type</label>
+          <select id="property-type" name="type">
+            <option value="">All types</option>
+            <option value="house">House and lot</option>
+            <option value="condo">Condominium</option>
+            <option value="townhome">Townhome</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="budget">Maximum price</label>
+          <select id="budget" name="budget">
+            <option value="">Any price</option>
+            <option value="8000000">₱8,000,000</option>
+            <option value="12000000">₱12,000,000</option>
+            <option value="18000000">₱18,000,000</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="results-bar" id="results-bar" hidden>
+        <p id="result-count" role="status" aria-live="polite" aria-atomic="true">3 properties</p>
+        <button class="text-button" id="clear-filters" type="button" disabled>Clear filters</button>
+      </div>
+      <div class="property-grid" id="property-grid">
+        <article class="listing" data-property="solana" data-type="house" data-location="antipolo" data-price="16500000">
+          <img src="asset/images/solana-exterior.webp" width="512" height="512" loading="lazy" decoding="async" alt="Solana House exterior and front garden at dusk">
+          <div class="listing-copy">
+            <div class="listing-heading">
+              <h3>Solana House</h3>
+              <p>Antipolo, Rizal · House and lot</p>
+            </div>
+            <p class="price">₱16,500,000</p>
+            <p class="specs">4 beds <span aria-hidden="true">·</span> 3 baths <span aria-hidden="true">·</span> 246 m² floor area</p>
+            <p class="summary">A detached home with a garden, covered terrace and room to park two cars.</p>
+            <button class="text-button listing-action" type="button" aria-label="View details for Solana House" hidden>View details <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+        <article class="listing" data-property="alder" data-type="condo" data-location="pasig" data-price="7450000">
+          <img src="asset/images/alder-living.webp" width="512" height="512" loading="lazy" decoding="async" alt="Alder Corner living room overlooking the Pasig skyline">
+          <div class="listing-copy">
+            <div class="listing-heading">
+              <h3>Alder Corner</h3>
+              <p>Kapitolyo, Pasig · Condominium</p>
+            </div>
+            <p class="price">₱7,450,000</p>
+            <p class="specs">2 beds <span aria-hidden="true">·</span> 2 baths <span aria-hidden="true">·</span> 72 m² floor area</p>
+            <p class="summary">A corner condominium with dual-aspect windows and an open kitchen.</p>
+            <button class="text-button listing-action" type="button" aria-label="View details for Alder Corner" hidden>View details <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+        <article class="listing" data-property="sienna" data-type="townhome" data-location="marikina" data-price="9800000">
+          <img src="asset/images/sienna-exterior.webp" width="512" height="512" loading="lazy" decoding="async" alt="Sienna Row three-storey townhome seen from street level">
+          <div class="listing-copy">
+            <div class="listing-heading">
+              <h3>Sienna Row</h3>
+              <p>Concepcion Dos, Marikina · Townhome</p>
+            </div>
+            <p class="price">₱9,800,000</p>
+            <p class="specs">3 beds <span aria-hidden="true">·</span> 3 baths <span aria-hidden="true">·</span> 138 m² floor area</p>
+            <p class="summary">A three-storey townhome with a gated carport and an upper-floor study.</p>
+            <button class="text-button listing-action" type="button" aria-label="View details for Sienna Row" hidden>View details <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden>
+        <p>Try a different search term, or clear the filters to see all properties.</p>
+      </div>
+    </section>
+
+    <section class="guide" id="viewing-guide" aria-labelledby="guide-title">
+      <div class="wrap guide-inner">
+        <div>
+          <h2 id="guide-title">Before you visit</h2>
+          <p>What to check between finding a listing and walking through the door.</p>
+        </div>
+        <div class="guide-questions">
+          <details open>
+            <summary>What should I compare across properties?</summary>
+            <p>Start with the asking price, usable floor area and location. For a condo, check dues and whether the price includes parking. For a house or townhome, ask about lot size and who maintains shared areas.</p>
+          </details>
+          <details>
+            <summary>How do I request a viewing?</summary>
+            <p>Open a property’s details and choose Request a viewing. Select a preferred time and try the form with sample contact details.</p>
+          </details>
+          <details>
+            <summary>What should I look for at the viewing?</summary>
+            <p>Check natural light, ventilation, power outlets, storage and street noise. Walk through the parking spot and bring a tape measure for any furniture you plan to keep.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="#top">Formstead<span> Realty</span></a>
+      <p>A WorkWithJethro portfolio demo. Listings, prices and generated photos are illustrative.</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <dialog id="property-dialog" class="property-dialog" aria-labelledby="detail-title">
+    <div class="dialog-inner">
+      <header class="dialog-header">
+        <div>
+          <h2 id="detail-title" tabindex="-1"></h2>
+          <p id="detail-location"></p>
+        </div>
+        <button id="close-dialog" class="close-button" type="button" aria-label="Close property details">×</button>
+      </header>
+      <div id="property-detail">
+        <figure class="photo-tour" aria-label="Property photo tour">
+          <img id="tour-photo" src="asset/images/solana-exterior.webp" width="512" height="512" loading="lazy" alt="">
+          <figcaption>
+            <p id="photo-caption" role="status"></p>
+            <div class="photo-controls">
+              <button id="prev-photo" type="button" aria-label="Previous photo">←</button>
+              <button id="next-photo" type="button" aria-label="Next photo">→</button>
+            </div>
+          </figcaption>
+        </figure>
+        <div class="detail-copy">
+          <p class="price" id="detail-price"></p>
+          <p class="specs" id="detail-specs"></p>
+          <p id="detail-summary"></p>
+          <button class="button button-dark" id="open-inquiry" type="button">Request a viewing <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+      <section id="inquiry-panel" aria-labelledby="inquiry-title" hidden>
+        <button class="text-button back-button" type="button" id="back-to-detail">← Property details</button>
+        <h3 id="inquiry-title" tabindex="-1">Request a viewing</h3>
+        <p>Use sample contact details to try the form. Your entry stays on this page.</p>
+        <form id="viewing-form" method="dialog" autocomplete="off">
+          <div class="field">
+            <label for="viewing-name">Name</label>
+            <input id="viewing-name" type="text" name="name" placeholder="e.g. Jamie Cruz" required maxlength="120">
+          </div>
+          <div class="field">
+            <label for="viewing-email">Email address</label>
+            <input id="viewing-email" type="email" name="email" placeholder="e.g. jamie@example.com" required maxlength="254">
+          </div>
+          <div class="field">
+            <label for="viewing-time">Preferred time</label>
+            <select id="viewing-time" name="time" required>
+              <option value="">Choose a time window</option>
+              <option>Weekday morning</option>
+              <option>Weekday afternoon</option>
+              <option>Weekend morning</option>
+              <option>Weekend afternoon</option>
+            </select>
+          </div>
+          <button class="button button-dark" type="submit">Preview inquiry</button>
+        </form>
+        <div id="viewing-confirmation" class="confirmation" hidden>
+          <h4 id="confirmation-title" tabindex="-1">Inquiry preview ready</h4>
+          <p id="confirmation-time"></p>
+          <p>This portfolio demo keeps the preview in your browser. No viewing was booked.</p>
+          <button class="button button-dark" id="finish-inquiry" type="button">Done</button>
+        </div>
+      </section>
+    </div>
+  </dialog>
+</body>
+</html>
